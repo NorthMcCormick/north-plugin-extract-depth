@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="north-plugin-extract-depth"
+    version="1.0.0">
+    <name>Cordova Plugin Template</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/NorthMcCormick/north-plugin-extract-depth.git</repo>
+    <issue>https://github.com/NorthMcCormick/north-plugin-extract-depth/issues</issue>
+    
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+            <clobbers target="extractDepth" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="extractDepth">
+                <param name="ios-package" value="extractDepth" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/extractDepth.h" />
+        <source-file src="src/ios/extractDepth.m" />
+    </platform>
+</plugin>

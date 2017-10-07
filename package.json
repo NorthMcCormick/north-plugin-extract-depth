@@ -1,0 +1,11 @@
+{
+  "name": "north-plugin-extract-depth",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "north-plugin-extract-depth",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "description": "Extract image depth data"
+}
